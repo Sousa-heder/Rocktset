@@ -1,0 +1,417 @@
+ AGORA SIM CORES
+
+
+<!--  
+#cores 
+Usamos CSS para alerar cores do nosso documento
+        
+## Tipos
+
+* background-color (para caixas)
+* color (para textos)
+* borde-color (para-caixas)
+* Outros..
+
+## Valores
+
+poremos definir valores por
+
+* palavra-chae (blue, transparent)
+* hexadecimal (#990011)
+* funções: rgb, rgba. hsl, hsla.
+
+-->
+<style>
+css
+element {
+/* Keyword values */
+color: currentcolor ;
+/* <named-color> values*/
+color: red;
+color: orange;
+color: tan;
+color: rebeccapurple;
+
+/* <hex-color> values 0-F */
+color: #090 ;   
+color: #009900;
+color: #090a;
+color: #009900aa;
+
+/*<rgb()> values */
+color: rgb(red, green, blue); 
+color: rgba(red, green, blue, alpha) ;   
+color: rgb(green, red, blue);
+color: rgba(green, red, blue);
+color: rgb(blue, green, red);
+color: rgba(blue, green, red, alpha);
+
+/*<hsl> values*/
+color:hsl(hue, saturation, lightness) ;
+color:hsla(hue, saturation, lightness, alpha) ;
+
+/*Global-values*/  
+color: inherit;
+color: initial;
+color: unset;
+}
+</style>
+
+
+
+POSSO VER E OUVIR O HTML
+
+
+{
+<VIDEO>
+- scr
+- controls
+- se não funcionar?
+- fallback content
+- source
+- src
+- type
+
+<video controls>
+<source src="">
+<p>Este browser não suporta video, baixe-o aqui</p>
+
+</video>
+    
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/hPtUbx8Ho5w" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
+    
+SVG <svg>
+É uma marcação, estilo html, não é para textos e sim para fazer imagens.
+Possuimos elementos para gerar formas
+        
+Para entender melhor
+- Imagem rasterizada x Imagem vetorizada
+
+Benefícios
+- Mais leve
+- Mais detalhada
+- Maior acessivilidade e SEO
+- Pode ser editada via CSS ou atributos
+        
+Desvantagens
+- Pode ser mais complicado de trabalhar
+- Quanto mais complexa a imagem, mais trabalho para o navegador
+- Navegadores mais antigos não possuem suporte para essa tag
+
+Para fotografias, ainda prefira usar imagens rasterizadas. 
+
+# Page Layouts 
+- Tables
+- Floats e Clear
+- Frameworks e Grid Systems
+- Flexbox
+- Grid
+
+## Posicionamentos 
+
+Controlar onde, na pagina, o elemento irá ficar,
+alterando o fluxo normal do elementos.
+        
+- Name: position
+- value: static
+        
+}
+
+
+
+POSICIONAMENTO FOGUETES
+
+
+
+<!--
+# Page Layouts 
+- Tables
+- Floats e Clear
+- Frameworks e Grid Systems
+- Flexbox
+- Grid
+
+## Posicionamentos 
+Controlar onde, na pagina, o elemento irá ficar,
+alterando o fluxo normal do elementos.
+        
+- Name: position
+- value: static|relative|absolute|fixed
+
+## Relative 
+- top, right, bottom, left, z- index
+        
+## Absolute
+
+## Fixed
+
+## Element Stacking-->
+        
+<!--
+# Flexbox
+        
+* Nos permite posicionar os elementos dentro da caixa.
+* Controle em uma dimensão (horizontal ou vertical)
+* Alinhamento, direcionamento, ordernar e tamanhos.
+
+
+}
+
+## flex-direction
+        
+* Qual a dereção do flex: horizontal ou vertical
+* row| column
+        
+##  alinhamento
+
+* justify- content
+* align-items
+
+# Grid
+
+* Posicionamento dos elementos dentro da caixa
+* Posicionamento horizontal e vertical ao mesmo tempo
+* pode ser flexível ou pixo
+* Cria espaços para elementos filhos habitarem.
+-->
+
+
+
+APP BONITO, ATÉ NOS TEXTOS
+
+
+
+# Trabalando com fontes 
+
+Tipografia transmite mansagem
+
+        - negrito
+        - tamanho
+        - estilo
+---------------------------------------------
+
+## Basic font Properties
+
+* font-family
+* font-waight
+* font-style
+* font-size
+
+---------------------------------------------
+
+## Font Family
+
+* Tipo de fonte de um elemento
+* Lista de fontes e ordem de prioridade
+* inclui *fallback* font
+
+```css
+p {
+    font-family: "Times New Roman", Times, serif;
+    
+}
+```
+    - sans
+    - serif
+
+## Font Weight
+
+* Peso da font
+
+´´ css
+p{
+    font-weight; bold;
+}
+´´
+
+-------------------------------------------
+
+
+## Font style
+
+* Estilo da fonte
+
+´´´css
+p{
+    font-style: italic;
+}
+´´´
+
+-------------------------------------------
+
+## Font size
+* O tamanho da fonte
+
+´´´css
+p[
+    font-size: 18px;
+]
+´´´
+
+-------------------------------------------
+## Web Fonts
+
+- Fontes do sistema x Fontes da Web
+- como usar fontes para web?
+
+* @font-face
+* @import
+* link 
+
+-------------------------------------------
+
+## Font Variant
+
+* variações na apresentação
+
+´´´css
+p{
+    font-variant: small-caps;
+}
+´´´
+
+-------------------------------------------
+
+## font-stretch
+
+* alargamento ou encolhimento da fonte
+* aceita palavra-chaves como; expanded, condensed, normal
+* aceita procentagens de 50% a 200%
+
+
+ ´´´css
+ p {
+    font-stretch: expanded;
+}
+´´´
+
+-------------------------------------------
+
+## letter spacing
+
+* Espaços entre caracteres (letras)
+
+´´´css
+p {
+    letter-spacing: 3px;
+}
+´´´
+
+-------------------------------------------
+
+## Word spacing
+* Espaços entre caracteres (palavras)
+
+´´´css
+p {
+    word-spacing: 3px;
+}
+´´´
+
+-------------------------------------------
+
+## Line height
+
+* Espaços entre linhas
+* Pode ser com unidades ou sem unidades de medida
+* Comuns: 1.5 ou 2 
+
+´´´css
+p {
+    line-height: 1.6;
+}
+´´´
+
+-------------------------------------------
+
+## text-transform
+
+* Transformação de texto
+
+´´´css
+p {
+    text-transform: uppercase; /* capitalize | lowercase | none */
+}
+´´´
+-------------------------------------------
+
+## text-decoration
+
+* Aparencia decorativa de um texto
+* line: underline | overline | line-through
+    * podemos aplicar mais de 1 valor
+* Style: wavy | dotted | double | dashed | solid 
+* color: `<color>` values 
+
+´´´css
+p {
+    text-decoration: underline; /* shorthand */
+}
+´´´
+-------------------------------------------
+
+
+
+
+
+## text-align
+
+* Alinhamento de texto
+
+´´´css
+p {
+    text-align: center;  /* left | right | center | justify */
+}
+´´´
+-------------------------------------------
+
+
+
+## text-shadow
+
+* Sombra aplicada a um texto
+* Permite múltiplos valores 
+
+´´´css
+p {
+    text-shedow: 1px 1px 1px red,
+                 2px 2px 1px green; /* offset-x | offset-y | blur-radius | color */
+}
+´´´
+-------------------------------------------
+
+
+
+## Shorthand
+
+* font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family
+
+´´´css
+p { /* -style, -variant, -weight, -stretch, -size, line-height, e -family. */
+    font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+    
+}
+´´´
+-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+    
