@@ -246,3 +246,121 @@ Atributos
 
 
 
+
+<input type="url">
+
+- Espera que o usuário degite uma url
+- Irá validar se o valor digitido é uma url
+
+* Atributos
+
+- placeholder
+- readonly / disabled
+- value
+- required
+
+- multiple 
+    * O campo irá receber 1 ou mais emails, separados por vírgulas
+
+- minlength / maxlength 
+    * O número mínimo e/o maximo de caracteres para este campo 
+
+- size
+    * O valor numérico indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuario
+
+- pattern
+    * Expressão regular para validar oque está sendo digitado no campo
+    * exemplo: O usuário só poderá colocar um domínio .com.br
+        * pattern=".*\.com\.br.*"
+
+- list 
+    * o id de uma tag <datalist> que está no mesmo documento 
+    * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponíveis.
+        * Os valores  do <datalist> que não forem compatives com o campo, não serão apresentados como sugestão. 
+
+- spellcheck
+    * Habilitar a verificação ortográfica para este input
+
+
+<input type="file">
+
+-  O usuário pode escolher 1 ou mais arquivos para o enviar o formulário 
+
+* Atributos 
+
+- value 
+    * contém o arquivo a ser enviado 
+
+- accept 
+    * Descreve que tipos de arquivos serão aceitos 
+    * exemplo: .doc, .docx, .pdf, audio/*, image/png, .png
+
+- files 
+    * A lista de arquirvo ou arquirvos 
+
+- multiple 
+    * permite o envio de múltiplos arquivos
+
+* ENVIO DOS ARQUIVOS
+para o envio dos arquivos o formulário deverá utilizar o método POST e o atributo enctype como  "mulipart/form-data"
+
+
+<input type="checkbox">
+
+- Caixas que podem ser marcadas 
+- Selecionar um valor a ser enviado
+- Se não selecionado, não será enviado nenhum dado
+
+* Atributos 
+
+- Globais 
+- value
+    * valor que aquele campo contém 
+    * se não estiver presente, o padrão é 'on'
+- checked
+    para deixar o campo marcado por padrão 
+
+
+<input type="hidden" id="timestamp" name="timestamp" value="01123581321">
+
+- invisível ao usuário
+- será enviado com o formulário
+- não receberá foco
+- leitores de tela não percebem esse campo
+
+
+
+<input type="checkbox">
+
+- Projetodo para selecionar uma única opção de um grupo de opções
+
+* ATRIBUTOS ESSENCIAIS
+
+- checked
+    * inddica que o campo foi marcado
+- value 
+    * valor que aquele campo contém
+
+
+<textarea name="" id="" cols="30" rows="10"></textarea>
+
+<textarea>
+
+- mais de uma linha
+- útil para textos grandes
+
+* ATRIBUTOS 
+
+- id 
+- name 
+- rows e cols
+- minlength / maxlength
+- wrap
+.. outros comuns aos <input>s
+    - autocomplete, autofocus, disabled, placeholder, readonly, form, required
+
+
+
+
+
+
