@@ -361,6 +361,48 @@ para o envio dos arquivos o formulário deverá utilizar o método POST e o atri
 
 
 
+# CRIANDO UM FORMULÁRIO
+
+
+* Crie um formulário de Contato 
+
+1. O fomulário deverá conter um título de nome Contato. Usar fildset e legend para essa finalidade 
+
+2. o formulárop conterá 3 campos 
+    - nome (input texto)
+    - email (input email)
+    - mensagem (textarea)
+
+3. O formulário deverá conter um botão para enviar 
+
+Atenção: O formulário deverá conter regras de acessibilidade, como o label para cada campo por exemplo. 
+
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+        <label for="name">Nome</label>
+        <br>
+        <input id="name" type="text" name="name" placeholder="Nome completo">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input id="email" type="email" name="email" placeholder="Digite seu email" >
+        <br>
+        <br>
+        <label for="message">mensagem</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
+        <br>
+        <br>
+        <buttont type="submit" aria-label="Enviar">Enviar</button>
+
+    </fieldset>
+    
+</form>
+
+
+
 
 
 
