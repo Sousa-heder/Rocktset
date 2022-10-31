@@ -71,6 +71,57 @@
 * Conceitos e escrita 
 
 * Vamos aprender os tipos de dados mais utilizados na linguagem 
-    * Você sabia que é possivel aprender 80% de uma lingua nova, com cerca de 20% vocabulário? (até menos)
+* Você sabia que é possivel aprender 80% de uma lingua nova, com cerca de 20% vocabulário? (até menos)
+
+# Tipos de dados 
+
+Conforme o ECMAScrip standard temos 9 tipos de dados:
+
+* Data types 
+    - Primitive/ Primitive value
+    - Structural
+    - Structural Primitive
+
+## Primitivos 
+
+* String
+* Number
+* Boolean
+* Undefined
+* Symbol
+* BigInt
+
+## Estruturais 
+
+* Object
+* Array
+* Map
+* Set
+* Date
+* ...
+*Function
+
+## Primitivo Estrutural / Structural Root Primitive 
+
+* null
+
+
+# Variáveis 
+
+* Nomes simbólicos para receber algum valor
+* Atalhos de código
+* Identificadores 
+* 3 palavras reservadas para criar uma variável
+    * var  
+    * let
+    * const
+
+* O JS é uma linguagem fracamente tipada e dinâmica 
+- Variáveis não precisam ter o um tipo previamente definido 
+- Podemos mudar o conteúdo variável 
+
+# Scope 
+
+* Escopo determina a visibilidade de alguma variável no JS 
     
 
