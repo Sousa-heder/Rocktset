@@ -123,5 +123,26 @@ Conforme o ECMAScrip standard temos 9 tipos de dados:
 # Scope 
 
 * Escopo determina a visibilidade de alguma variável no JS 
-    
+
+## Para criar nomes 
+
+* JS é case-sensiteve (Sensível ao caso)
+* JS aceita a cadeia de caracteres unicode
+
+* Posso: 
+    - Iniciar com esses caracteres especiais: $ _
+    - Iniciar com letras
+    - Colocar acentos 
+    - Letras Maísculas e munísculas fazem difereaça
+
+* Não posso:
+    - Iniciar com números
+    - Colocar espaços vazios no nome
+
+* Ideal: 
+    - Criar nomes que fazem sentido
+    - Que explique o que a variável é ou faz 
+    - camelCase
+    - snake_case
+    - Escreber em inglês
 
