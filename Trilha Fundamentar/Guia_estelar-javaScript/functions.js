@@ -269,3 +269,47 @@ try {
 }
 
 console.log('após ao try/catch')
+
+// Estrutura de repetição
+
+// for
+// break - para a execução do loop
+// continue - pula a execução do momento.
+for (let index = 10; index < 0; index--) {
+    if(index === 5) {
+        continue;
+    }
+    console.log(index)
+    
+}
+
+// Estrutura de repetição
+// while
+let i = 4545455454214654654
+while(i > 10){
+    console.log(i)
+
+    i /= 35
+}
+
+// for...of
+
+let namE = 'Hed'
+let namEs = ['Sousa','Stefani','Igor']
+
+for(let namE of namEs){
+    console.log(namE)
+}
+
+// for...in 
+
+let person = {
+    name: 'john',
+    age: 30,
+    weight: 88.6
+}
+
+for(let property in person){
+    console.log(property)
+    console.log(person[property])
+}
