@@ -1,1 +1,74 @@
-## Web Semântica
+## Seletores 
+
+Conecta um elemento HTML com o CSS a fim de alterar o elemento.
+
+## tipos 
+
+* Element Selector
+    - Todos os elementos HTML.
+
+* ID Selector
+    - Um elemento que tenha um atributo `id`.
+    - Cada id deverá ser único.
+
+* Class Selector
+    - Os elementos que contenha um atributo `class`.
+    - Podemos ter uma ou mais classes.
+
+* Attribute selector
+    - Um elemento que tenha um atributo  específico.
+
+* Pseudo-class selector
+    - Elementos em um estado específico.
+
+## Combinators
+
+Combinadores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização
+
+## Descendant combinator
+
+* Identifcado por um espaço entre os seletores.
+* Busca um elemento dentro de outro. 
+
+```CSS
+body article h2
+```
+
+## child combinator
+
+* Identifcado pelo sinal `>` entre dois seletores.
+* Seleciona somente o elemento que é filho direto do pai.
+* Elementos deposi do filho direto serão desconsiderados. 
+
+``` CSS
+body > ul > li
+``` 
+
+## Adjacent sibling combinator
+
+* Identificado pelo sinal `+` entre dois seletores.
+* Seleciona somente o elemento do lado que é irmão direto na hierarquia.
+
+``` CSS	
+h1 + p
+```	
+
+## General sibling combinator
+
+* Identificado pelo sinal `~` entre dois seletores.
+* Seleciona todos os elementos irmãos. 
+
+``` CSS
+h1 ~ p
+```
+
+## Utilizando combinadores
+
+``` CSS	
+ul > li [class='red']
+
+## Dica 
+
+* Seletores muito  específico tendem a causar dificuldades no reuso das regras de estilização dos elementos
+* Muitas vezes, um simples uso de classses, torna o trabalho muito mais eficiente. 
+
