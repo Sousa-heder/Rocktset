@@ -1,0 +1,179 @@
+## Seletores 
+
+Conecta um elemento HTML com o CSS a fim de alterar o elemento.
+
+## tipos 
+
+* Element Selector
+    - Todos os elementos HTML.
+
+* ID Selector
+    - Um elemento que tenha um atributo `id`.
+    - Cada id deverá ser único.
+
+* Class Selector
+    - Os elementos que contenha um atributo `class`.
+    - Podemos ter uma ou mais classes.
+
+* Attribute selector
+    - Um elemento que tenha um atributo  específico.
+
+* Pseudo-class selector
+    - Elementos em um estado específico.
+
+## Combinators
+
+Combinadores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização
+
+## Descendant combinator
+
+* Identifcado por um espaço entre os seletores.
+* Busca um elemento dentro de outro. 
+
+```CSS
+body article h2
+```
+
+## child combinator
+
+* Identifcado pelo sinal `>` entre dois seletores.
+* Seleciona somente o elemento que é filho direto do pai.
+* Elementos deposi do filho direto serão desconsiderados. 
+
+``` CSS
+body > ul > li
+``` 
+
+## Adjacent sibling combinator
+
+* Identificado pelo sinal `+` entre dois seletores.
+* Seleciona somente o elemento do lado que é irmão direto na hierarquia.
+
+``` CSS	
+h1 + p
+```	
+
+## General sibling combinator
+
+* Identificado pelo sinal `~` entre dois seletores.
+* Seleciona todos os elementos irmãos. 
+
+``` CSS
+h1 ~ p
+```
+
+## Utilizando combinadores
+
+``` CSS	
+ul > li [class='red']
+```
+
+
+## Dicas
+
+* Seletores muito  específico tendem causar dificuldades no reuso das regras de estilização dos elementos
+* Muitas vezes, um simples uso de classses, torna o trabalho muito mais eficiente.
+
+
+## Pseudo-class
+
+
+É um tipo de seletor que irá selecionar um elemento que estiver em um estado específico.
+
+Exemplo: É o primeiro elemento dentro de uma caixa, ou, o elemento está com ponteiro do mouse em cima dele. 
+
+Pseudo-classes começam com 2 pontos seguidos do nome da pseudo-class
+`:pseudo-class-name`
+
+
+## Selecionando elementos com pseudo-class
+
+* :first-child
+* :nth-of-child() 
+* :nth-child()
+
+
+## Ações do Usuário
+
+* :hover
+* :focus
+
+
+## Atributos 
+
+* :disabled
+* :required
+
+## Referência
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+
+# Pseudo-Elements
+
+Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS
+
+`::pseudo-element-name`
+
+# Exemplos
+
+* ::before
+* ::after
+* ::first-line
+
+## Referência
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+
+# Layouts e Evolução
+
+Layout tem a ver com a maneira que os elementos estão distribuidos na tela.
+
+## Normal flow 
+
+Ou Flow Layout é a maneira que os elementos `block` e `line`
+
+```html
+<p> Texto block com <Strong>inline</strong>dentro</p>
+```
+## Tables
+
+É a maneira de tabelas onde a tag `table` recebe um display `table` fazendo com que os elemento internos como `td` e `tr` possam ser usados para montar uma tabela
+
+```html
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+```
+
+## Tabless
+
+Uso das propriedades `Float`, `Clear` para que os elementos possam mudar de possição na tela.  
+
+```html
+    <div style="float: left;">
+        esquerda
+    </div>
+    <div style="float: right;">
+        direita
+    </div>
+    <div style="clear:both">
+        normal
+    </div>
+```
+
+## Flexbox
+
+A caixa se torna flex, fazendo com que os elementos internos possam receber melhor:
+
+- Alinhamento
+- Ordenação
+- Tamanhos flexíveis
